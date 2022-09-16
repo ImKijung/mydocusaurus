@@ -1,0 +1,47 @@
+{
+  "mySidebar": [
+    {
+      "type": "doc",
+      "id": "greeting",
+      "label": "시작하기"
+    },
+    {
+      "type": "doc",
+      "id": "intro",
+      "label": "Tuturial - Intro"
+    },
+    {
+      "type": "category",
+      "label": "Tutorial - Basics",
+      "collapsible": true,
+      "collapsed": true,
+      "link": {
+        "type": "doc",
+        "id": "tutorial-basics/tutorial-index"
+      },
+      "items": [
+        "tutorial-basics/create-a-document",
+        "tutorial-basics/create-a-page",
+        "tutorial-basics/create-a-blog-post",
+        "tutorial-basics/markdown-features",
+        "tutorial-basics/deploy-your-site",
+        "tutorial-basics/congratulations"
+      ]
+    },
+    {
+      "type": "category",
+      "label": "Tutorial - Extras",
+      "collapsible": true,
+      "collapsed": true,
+      "items": [
+        "tutorial-extras/translate-your-site",
+        "tutorial-extras/manage-docs-versions"
+      ]
+    },
+    {
+      "type": "link",
+      "label": "My Site",
+      "href": "https://www.notion.so/asttcs"
+    }
+  ]
+}

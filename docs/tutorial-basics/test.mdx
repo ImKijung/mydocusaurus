@@ -1,0 +1,105 @@
+# 테스트 페이지!
+
+import TOCinline from '@theme/TOCInline';
+
+<TOCinline 
+    toc={toc.filter((node) => node.level === 2)}
+/>
+
+## 컴포넌트 내보내기
+<highlight color="#25c2a0">도큐사우루스 초록</highlight>과 <highlight color="#1877F2">페이스북 파랑</highlight>은 내가 좋아하는 색입니다.
+
+I can conveniently use <highlight color="#25c2a0">Docusaurus green</highlight> everywhere!
+
+## 마크다운 형식
+**마크다운**을 _JSX_와 같이 사용할 수 있습니다!
+
+## 코드 스니펫
+jsx 파일의 코드를 직접 가져올 수 있습니다.
+
+import CodeBlock from '@theme/CodeBlock';
+import MyComponentSource from '!!raw-loader!./myComponent';
+
+<CodeBlock language="jsx">{MyComponentSource}</CodeBlock>
+
+## 문서 가져오기
+다른 mdx 파일의 문서를 아래에 출력할 수 있습니다.
+
+import PartialExample from './partial_example.mdx';
+
+<PartialExample/>
+
+import Tabs from '@theme/Tabs';
+import TabItem from '@theme/TabItem';
+
+## 탭 기능 사용하기
+MDX 기반으로 `<Tabs>` 컴포넌트를 마크다운에서 사용할 수 있습니다.
+
+<Tabs>
+    <TabItem value="apple" label="Apple" default>
+        This is an apple 🍎
+    </TabItem>
+    <TabItem value="orange" label="Orange">
+        This is an orange 🍊
+    </TabItem>
+    <TabItem value="banana" label="Banana">
+        This is an banana 🍌
+    </TabItem>
+</Tabs>
+
+## 코드 블록 사용하기
+
+### 코드 제목
+
+```jsx showLineNumbers title="/src/component/HelloCodeTitle.js"
+function HelloCodeTitle(props) {
+    return <h1>Hello, {props.name}</h1>;
+}
+```
+
+### 구문 강조
+
+```js
+console.log('Every repo must come with a mascot.');
+```
+
+### 라인 강조
+
+```js showLineNumbers
+function highlightSomeText(highlight) {
+    if (highlight) {
+        //highlight-next-line
+        return 'This text is highlighted~';
+    }
+}
+```
+
+## 준수 사항
+:::note
+Some **content** with _Markdown_ `syntax`. check [this `api`](#).
+
+노트에 해당하는 스타일입니다.
+:::
+:::tip
+Some **content** with _Markdown_ `syntax`. check [this `api`](#).
+
+팁에 해당하는 스타일입니다.
+:::
+:::warning
+경고 스타일
+:::
+
+### 준수 사항 제목 설정하기
+:::note 알아두기
+노트 제목을 설정할 수 있습니다.
+:::
+
+## 이미지 처리
+
+![로고 이미지](/img/docusaurus.png)
+![이미지2](/img/undraw_docusaurus_react.svg)
+
+## 마크다운 링크 처리
+
+* 외부 링크 [노션 링크](https://www.notion.so/asttcs)
+* 내부 링크 [다른 파일로 링크](../tutorial-extras/translate-your-site)

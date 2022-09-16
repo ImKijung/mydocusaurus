@@ -1,0 +1,10 @@
+http://127.0.0.1:8000/docs/intro
+http://127.0.0.1:8000/docs/tutorial-basics/tutorial-index
+http://127.0.0.1:8000/docs/tutorial-basics/create-a-document
+http://127.0.0.1:8000/docs/tutorial-basics/create-a-page
+http://127.0.0.1:8000/docs/tutorial-basics/create-a-blog-post
+http://127.0.0.1:8000/docs/tutorial-basics/markdown-features
+http://127.0.0.1:8000/docs/tutorial-basics/deploy-your-site
+http://127.0.0.1:8000/docs/tutorial-basics/congratulations
+http://127.0.0.1:8000/docs/tutorial-extras/translate-your-site
+http://127.0.0.1:8000/docs/tutorial-extras/manage-docs-versions
